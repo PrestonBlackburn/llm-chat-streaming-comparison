@@ -1,0 +1,26 @@
+
+<div class="uk-width-1-2">
+
+    <!-- Chat Content Gets Swapped Here -->
+   <div id="history"></div>
+   <div id="stream"></div>
+
+   
+   <div hx-ext="ws" ws-connect="/ws">
+       <br/>
+       <br/>
+       <form id="form" ws-send>
+           <div class="uk-margin uk-width-1-1">
+               <div class="uk-inline uk-width-1-1">
+                   <button class="uk-form-icon uk-form-icon-flip" type="submit" uk-icon="icon: play-circle"></button>
+                   <input class="uk-input uk-width-1-1" name="chat_message" type="text" placeholder="Your Question Here..." aria-label="Clickable icon">
+     
+               </div>
+           </div> 
+       </form>
+
+   </div>
+</div>
+
+   
+   

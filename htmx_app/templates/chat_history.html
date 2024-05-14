@@ -1,0 +1,28 @@
+<div id="history" "hx-swap-oob=beforeend:#history">
+
+    <div class="uk-width-1-1">
+
+    {% for message in prev_messages %}
+        
+        {% if message['role'] == "user" %}
+        <div class="uk-flex uk-flex-row">
+            <div style="padding:10px"><span uk-icon="icon: user"></span></div>
+            <div class = "uk-width-3-4">{{ message['content'] }} </div>
+            <div class="uk-width-1-4"> </div>  
+        </div>
+        <br/>
+        {% endif %}
+                
+        {% if message['role'] == "system" %}
+        <div class="uk-flex uk-flex-row uk-flex-right">
+            <div class="uk-width-1-4"> </div>
+            <div class="uk-align-right uk-width-3-4">{{ message['content'] }} </div>
+            <div style="padding:10px"><span uk-icon="icon: bolt"></span></div>
+        </div>
+        <br/>
+        {% endif %}
+    {% endfor %}
+
+    </div>
+
+</div>

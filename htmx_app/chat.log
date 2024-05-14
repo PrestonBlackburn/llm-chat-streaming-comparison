@@ -1,0 +1,14 @@
+# Test with ~10,000 words
+INFO:chat_app:Total Time: 1.2845017910003662
+INFO:chat_app:Total Time: 1.2745006084442139
+INFO:chat_app:Total Time: 1.339998483657837
+INFO:chat_app:Total Time: 1.436997652053833
+INFO:chat_app:Total Time: 1.339998483657837
+# Test with ~1,000 words
+INFO:chat_app:Total Time: 0.049524545669555664
+INFO:chat_app:Total Time: 0.04652237892150879
+INFO:chat_app:Total Time: 0.04803323745727539
+INFO:chat_app:Total Time: 0.05001521110534668
+INFO:chat_app:Total Time: 0.04749870300292969
+# Test with ~100,000 words
+INFO:chat_app:Total Time: 485.35998487472534
