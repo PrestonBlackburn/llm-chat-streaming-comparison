@@ -12,6 +12,10 @@ COPY . /src
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.0.0", "--server.fileWatcherType=none", "--browser.gatherUsageStats=false", "--theme.base=dark"]
 
-CMD ["streamlit", "run", "main.py", "--server.fileWatcherType", "none", "--browser.gatherUsageStats", "false", "--theme.base", "dark"]
+# docker build . -t streamlit_chatbot
+# docker run -p 8501:8501 streamlit_chatbot
+# ~670 MB image size
+
+

@@ -1,4 +1,4 @@
 fastapi
 websockets
-uvicorn[standard]
-jinja
+uvicorn
+Jinja2
